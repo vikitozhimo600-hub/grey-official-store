@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GREY OFFICIAL STORE</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#090b12;
+color:white;
+}
+header{
+padding:22px;
+text-align:center;
+background:#111827;
+border-bottom:2px solid #00e5a0;
+}
+header h1{color:#00e5a0;margin:0}
+header p{color:#aaa}
+.hero{
+text-align:center;
+padding:65px 20px;
+}
+.hero h2{font-size:32px}
+.hero span{color:#00e5a0}
+.hero p{color:#aaa}
+.products{
+padding:20px;
+text-align:center;
+}
+.product{
+background:#151c29;
+padding:22px;
+margin:15px auto;
+max-width:350px;
+border-radius:12px;
+border:1px solid #263447;
+}
+.product h3{color:#00e5a0}
+button{
+background:#00e5a0;
+color:#07110e;
+border:0;
+padding:13px 25px;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+footer{
+text-align:center;
+padding:25px;
+color:#888;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>GREY OFFICIAL STORE</h1>
+<p>Your Trusted MLBB Recharge Store</p>
+</header>
+
+<section class="hero">
+<h2>POWER UP YOUR <span>GAME</span></h2>
+<p>Fast, Easy and Reliable MLBB Diamond Recharge.</p>
+<button onclick="document.getElementById('products').scrollIntoView()">
+EXPLORE PACKAGES
+</button>
+</section>
+
+<section class="products" id="products">
+<h2>MLBB DIAMOND PACKAGES</h2>
+
+<div class="product">
+<h3>Weekly Pass</h3>
+<p>MLBB Weekly Diamond Pass</p>
+<button onclick="order('Weekly Pass')">ORDER NOW</button>
+</div>
+
+<div class="product">
+<h3>Diamond Packages</h3>
+<p>Choose your preferred diamond package.</p>
+<button onclick="order('Diamond Package')">ORDER NOW</button>
+</div>
+
+<div class="product">
+<h3>Special Offers</h3>
+<p>Check out our latest offers.</p>
+<button onclick="order('Special Offer')">ORDER NOW</button>
+</div>
+</section>
+
+<footer>
+<p>GREY OFFICIAL STORE © 2026</p>
+<p>Thank you for supporting us!</p>
+</footer>
+
+<script>
+function order(product){
+alert("You selected: "+product+
+". Contact GREY OFFICIAL STORE for ordering.");
+}
+</script>
+
+</body>
+</html>
